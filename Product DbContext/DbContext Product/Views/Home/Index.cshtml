@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>DbContext Product</h1>
+    <p class="lead">@ViewBag.Message</p>
+    @if (Session["UserName"] == null)
+    {
+        <p class="lead">Login to manage products.</p>
+    }
+</div>
+
+
